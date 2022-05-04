@@ -1,0 +1,241 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    --cor-principal: #043434;
+    --cor-letra-primaria: #c4ccd4;
+    --cor-letra-segundaria: #a33b44;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: yellow;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contato-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: #043434;
+    padding-bottom: 10px;
+}
+.contato-header h4 {
+    padding: 10px;
+    font-style: italic;
+}
+.contato-header img {
+    width: 25px;
+    height: 20px;
+    margin-left: 10px;
+}
+.contato-header a {
+    color:white;
+}
+.contato-header a:hover {
+    color: white;
+    text-decoration: underline;
+}
+header {
+    width: 100%;
+    height: 150px;
+    background-color: var(--cor-principal);
+    border-bottom: 4px solid var(--cor-letra-segundaria);  
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.branco {
+    text-align: center;
+    height: 200px;
+}
+.branco h2 {
+    padding-top: 100px;
+}
+nav {
+    display: inline-flex;
+}
+nav  ul {
+    font-size: 15pt;
+    display: inline-flex;
+    margin: 50px 50px;
+}
+nav  li {
+    margin: 0px 50px;
+    list-style: none;
+}
+.menu-mobile div {
+    height: 2px;
+    width: 30px;
+    margin: 8px;
+    background-color: white;
+}
+.menu-mobile {
+    display: none;
+    margin-top: 50px;
+    text-align: right;
+    cursor: pointer;
+}
+.menu-mobile a {
+    color: white;
+}
+.menu-mobile li {
+    padding: 20px;
+    list-style: none;
+    font-size: 20pt;
+    display: block;
+}
+.menu-mobile ul {
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+    left: 60%;
+    top: 150px;
+    background-color: #043434;
+}
+.show-menu {
+    opacity: 1 !important;
+}
+@media (max-width: 800px) {
+    .menu-mobile{display: block;}
+    .menu-mobile ul {
+        margin-top: 40px;
+    }
+    .menu-desktop{display: none;}
+}
+.informacao {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #043434;
+    margin-bottom: 50px;
+}
+.informacao  ul {
+    display: inline-flex;
+    margin: 0px 10px;
+}
+.informacao li {
+    color: white;
+    padding: 10px;
+    margin: 0px 10px;
+}
+.contato {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+.contato h2 {
+    margin: 50px 0px;
+}
+.contato h4 {
+    padding: 10px;
+    font-style: italic;
+}
+.contato img {
+    width: 25px;
+    height: 20px;
+}
+.contato  a {
+    color: black;
+}
+.contato  a:hover {
+    color: black;
+    text-decoration: underline;
+}
+.contato- {
+    width: 400px;
+    height: 400px;
+    margin-left: 20px;
+}
+.instagram {
+    width: 400px;
+    height: 400px;
+    margin-left: 40px;
+}
+.instagram img {
+    margin-left: 50px;
+    height: 150px;
+    width: 150px;
+}
+iframe {
+    margin-top: 50px;
+}
+.endereco {
+    background-image: linear-gradient(50deg, #043434 80%, #a33b44 10%, #043434 );
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+}
+.endereco- {
+    margin-top: 10px;
+    width: 400px;
+    margin-left: 20px;
+}
+.endereco- h5 {
+    padding: 10px;
+}
+
+.atendimento {
+    margin-top: 10px;
+    width: 400px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+.atendimento h2 {
+    padding: 20px;
+}
+.atendimento img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.atendimento h5 {
+    padding-left: 20px;
+}
+.modelos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+.modelo- {
+    width: 350px;
+    height: 400px;
+    background-image: linear-gradient(50deg, #043434 80%, #a33b44 10%, #043434 );
+    border-radius: 20px;
+}
+.modelo- img {
+    border-radius: 20px 20px 0px 0px;
+}
+.modelo- h2 {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+span {
+    color: #a33b44;
+    font-size: 1.2em;
+}
+.informativo {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.informativo a {
+    color: #a33b44;
+}
+.informativo h2 {
+    padding: 20px;
+}
